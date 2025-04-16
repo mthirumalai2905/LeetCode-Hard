@@ -8,6 +8,7 @@ class Solution {
                     if (dist[i][k] != 100000000 && dist[k][j] != 100000000) {
                         if ((long) dist[i][k] + dist[k][j] < dist[i][j]) {
                             dist[i][j] = dist[i][k] + dist[k][j];
+                            
                         }
                     }
                 }
